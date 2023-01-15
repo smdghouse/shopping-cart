@@ -1,0 +1,97 @@
+@import "~bootstrap/scss/bootstrap";
+a{
+    text-decoration: none;
+    color: white;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.prodcontainer
+{
+ display: flex;
+ flex-direction: row;
+ width: 74%;
+ justify-content: space-between;
+ padding: 20px;
+ flex-wrap: wrap;
+}
+.home{
+   width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.filter{
+
+    display: flex;
+    flex-wrap: wrap;
+    width: 24%;
+    flex-direction: column;
+    background-color: black;
+    color: white;
+    justify-content: space-evenly;
+    padding: 20px;
+    margin: 10px;
+    height: 80vh;
+}
+.singleprod{
+    flex-basis: 30%;
+    margin-bottom:10px ;
+    ;
+
+}
+.dropcart
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 10px;
+    >img{
+        width: 30%;
+        margin: 0px;
+        flex-basis:30% ;
+    }
+    >div{
+        flex-basis: 30%;
+    }
+}
+.dropmenu
+{
+   right: 15%;
+}
+
+.total{
+    flex-direction: row-reverse;
+}
+.totaldiv{
+    align-items: flex-start!important;
+    justify-content: flex-start!important;
+    h1>{
+        font: 400 35px sans-serif;
+    }
+    h3>{
+        font:400 25px sans-serif;
+    }
+}
+.single_cart_item
+{
+    border: 1px solid rgb(61, 60, 60);
+    display: flex;
+    width: 100%;
+    padding: 0px 10px;
+    border-radius: 10px;
+    height: 200px;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 0px ;
+    >img{
+        width: 20%;
+    }
+}
+.cartitem{
+    padding: 10px;
+}
