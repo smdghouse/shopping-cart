@@ -9,7 +9,7 @@ function Total() {
     }, [cart])
     
   return (
-    <div className='filter totaldiv'>
+    <div className=' totaldiv'>
       <h1>{`Subtotal(${cart.length}) items`}</h1>
         <h3>Total price:{total}rs</h3>
         <p></p>
