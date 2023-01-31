@@ -1,4 +1,7 @@
 @import "~bootstrap/scss/bootstrap";
+.header{
+    z-index: 100;
+}
 a{
     text-decoration: none;
     color: white;
@@ -21,20 +24,23 @@ a{
    width: 100%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: flex-end;
+    position: relative;
 }
 .filter{
 
     display: flex;
     flex-wrap: wrap;
-    width: 24%;
     flex-direction: column;
     background-color: black;
     color: white;
     justify-content: space-evenly;
     padding: 20px;
     margin: 10px;
-    height: 80vh;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0px;
 }
 .singleprod{
     flex-basis: 30%;
@@ -81,6 +87,7 @@ a{
 {
     border: 1px solid rgb(61, 60, 60);
     display: flex;
+    flex-direction: column;
     width: 100%;
     padding: 0px 10px;
     border-radius: 10px;
@@ -94,4 +101,32 @@ a{
 }
 .cartitem{
     padding: 10px;
+}
+@media (max-width:600px) {
+    .card-body {
+        padding: 0.5rem;
+    }
+    
+    .search
+    {
+       display: none !important;
+    }
+    .prodcontainer
+    {
+        width: 55%;
+        padding: 0;
+        margin-bottom: 5px;
+    }
+    .filter
+    {
+        top: 5%;
+        width: 40%;
+        padding: 10px;
+    }
+    .card-body
+    {
+        width: 200px;
+    }
+   
+    
 }

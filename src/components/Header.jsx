@@ -7,7 +7,7 @@ import {RiDeleteBin6Fill} from 'react-icons/ri'
 function Header() {
     const{state:{cart},dispatch,productDispatch}=Cartstate()
   return (
-    <Navbar bg="dark" variant="dark" style={{height:`100px`}}>
+    <Navbar className='header' bg="dark" variant="dark" style={{height:`100px`}}>
         <Container>
             <Navbar.Brand>
                <Link to='/'>Ghouse-cart</Link>
